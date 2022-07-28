@@ -1,0 +1,94 @@
+.contact-form{
+    width:100%;
+    margin-top:20px;
+    
+
+    ul{
+        padding:0;
+        margin:0;
+        li{
+            padding:0;
+            margin:0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow:hidden;
+            display:block;
+            clear:both;
+            position:relative;
+            opacity:0;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+        }
+        li.half{
+            width:49%;
+            margin-left:2%;
+            float:left;
+            clear:none;
+
+            &:first-child{
+                margin-left:0;
+            }
+        }
+    }
+    input[type='text'],
+    input[type='email']{
+        width:100%;
+        border:0;
+        background:#115173;
+        height: 50px;
+        font-size:16px;
+        color:#fff;
+        padding:0 20px;
+        box-sizing:border-box;
+    }
+    textarea{
+        width:100%;
+        border:0;
+        background:#115173;
+        height:50px;
+        font-size:16px;
+        color:#fff;
+        padding:20px;
+        min-height:150px;
+        box-sizing:border-box;
+    }
+    .flat-button{
+        color:#ffd700;
+        background:0 0 ;
+        font:11 px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding:8px 10px;
+        border: 1px solid black;
+        float:right;
+        border-radius:5px;
+        
+    }
+    .flat-button:hover{
+        background: #ffd700;
+            color:black
+        
+    }
+    
+}
+.my-pic{
+    height:400px;
+    width:400px;
+    margin-left:60%;
+    margin-top:9%;
+    padding:5px;
+    border-radius: 50%;
+    animation:myanimation ;
+    animation-duration: 10s;
+
+}
+@keyframes myanimation{
+    from{
+        opacity:0;
+        border-radius: 5%;
+    }
+    to {
+        opacity:1;
+        border-radius: 50%;
+    }
+}
