@@ -13,10 +13,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
 const About = () => {
-  
+
+
 
   
-
   return (
     <>
       <div className="container about-page">
@@ -24,15 +24,10 @@ const About = () => {
           <h1>
             About Me
           </h1>
-          <p>
-            Hi, I am Gokul Verma currently persuing B.Tech in Software Engineering from Delhi Technological University, presently in 2nd year.
-          </p>
           <p align="LEFT">
-           I am proficient in Data Structures and Algorithms. I am aiming to work for a tech company where I get opportunities to explore and learn every day. 
-          </p>
-          <p>
-            I am a quick-learner, a sports fanatic,
-             and tech-obsessed individual!!!
+          Greetings! I'm Gokul Verma, a passionate B.Tech student majoring in Software Engineering at Delhi Technological University, currently thriving in my final year.<br/><br/>
+          My expertise lies in the realm of Data Structures and Algorithms, where I navigate complexities with finesse. My aspiration is to contribute my skills and knowledge to a cutting-edge tech company that provides an environment for continuous exploration and learning.<br/><br/>
+          A quick-learner by nature, I am not only immersed in the world of technology but also a fervent sports enthusiast. Let's connect and explore the boundless possibilities together! 🚀💻<br/><br/>
           </p>
         </div>
 

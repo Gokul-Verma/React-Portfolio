@@ -3,25 +3,42 @@ import { Link } from 'react-router-dom';
 //import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 //import {useState,useEffect} from 'react';
-import pic from '../../Assets/Images/pic.jpeg'
+import pic from '../../Assets/Images/pic.jpg'
 import Loader from 'react-loaders';
 
+
 const Home =() =>{
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'Resume.pdf';
+    link.target = '_blank';
+    link.download = 'Gokul_Verma_Resume.pdf'; // Set your desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
     
     return (
         <>
         <div className="container home-page">
         <div className="text-zone">
           <h1>
-            Hi <br/> I'm Gokul Verma <br/> Web Developer
+            Hi <br/> I'm Gokul Verma <br/> 
           </h1>
-          <h2>Front End Developer / Deep Learning Enthusiast</h2>
+          <div class="i-title">
+            <div class="i-title-wrapper">
+              <div class="i-title-item">Full Stack Developer</div>
+              <div class="i-title-item">UI/UX Designer</div>
+              <div class="i-title-item">Software Developer</div>
+              <div class="i-title-item">ML Enthusiast</div>
+              <div class="i-title-item">Learner</div>
+            </div>
+          </div>
+          
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-          
-          <a href="https://docs.google.com/document/d/1DIGfqtfujuUO7fi1_y6mgOV_kzBcHVLP/edit?usp=sharing&ouid=111746046832151066171&rtpof=true&sd=true" className='flat-button' target="_blank"
-            rel="noreferrer">MY RESUME</a>
+          <button className='flat-button-button' onClick={handleResumeDownload}>MY RESUME</button>
         </div>
         <img className="my-pic" src={pic} alt="gokul" />
       </div>
