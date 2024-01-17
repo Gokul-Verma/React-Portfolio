@@ -17,7 +17,7 @@ const Contact =() => {
         'service_sohsn78',
         'template_kncv5um',
         e.target, // This should be the HTML form element
-        'Nj_fBmnpLm6qxkZ_V' // Replace 'your_user_id' with the actual user ID for the Gmail API
+        'Nj_fBmnpLm6qxkZ_V' // 
       )
       .then(
         () => {
